@@ -7,10 +7,9 @@ echo $tesstEadf;
     echo "aaaa";
   echo "safdsaf";
 
-$array = Array("unpoko" => "💩");
+$array = array("unpoko" => "💩");
   var_dump($array);
 
-foreach($array as $shit){
- var_dump($shit);
-
+foreach ($array as $shit) {
+    var_dump($shit);
 }
