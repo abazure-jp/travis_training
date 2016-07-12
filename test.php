@@ -12,6 +12,4 @@ var_dump($array);
 
 foreach ($array as $shit) {
     var_dump($shit);
-
-
 }
