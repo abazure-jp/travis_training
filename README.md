@@ -1,5 +1,6 @@
 #これさあ
 
+Release 0.0.1
 
 Dockerつかえるやんやったーとか思ったけど`docker-compose`が必要とかでないかぎり`Dockerfile`をコピって`install:`に貼っつけたほうが良くない？んなことない？
 
