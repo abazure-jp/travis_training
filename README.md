@@ -1,5 +1,7 @@
 #これさあ
 
+aaaaaa
+1771だよー
 
 Dockerつかえるやんやったーとか思ったけど`docker-compose`が必要とかでないかぎり`Dockerfile`をコピって`install:`に貼っつけたほうが良くない？んなことない？
 
