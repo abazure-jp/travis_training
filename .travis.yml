@@ -7,6 +7,7 @@ install:
   - php composer.phar install --dev --no-interaction
 
 before_script:
+  - composer require satooshi/php-coveralls
 
 script:
     - mkdir -p build/logs
