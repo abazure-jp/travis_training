@@ -1,8 +1,7 @@
+[![Build Status](https://travis-ci.org/sano-say/travis_training.svg?branch=develop)](https://travis-ci.org/sano-say/travis_training)
+
 #これさあ
-
-aaaaaa
-1771だよー
-
+みおはさあ・・・アメリカの人？
 Dockerつかえるやんやったーとか思ったけど`docker-compose`が必要とかでないかぎり`Dockerfile`をコピって`install:`に貼っつけたほうが良くない？んなことない？
 
 参考: <https://github.com/sonnym/travis-ci-drupal-module-example/blob/7.x-1.x/.travis.yml>
