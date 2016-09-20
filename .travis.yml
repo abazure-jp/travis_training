@@ -1,1 +1,6 @@
-script: echo "ほげほげだよ〜〜"
+language: php
+php: 5.5
+
+script: 
+  echo "ほげほげだよ〜〜"
+  composer 
