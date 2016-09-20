@@ -14,4 +14,4 @@ script:
     - phpunit --coverage-clover build/logs/clover.xml --configuration tests/phpunit.xml tests
 
 after_success:
-    - travis_rtry php vendor/bin/coveralls -v
+    - travis_retry php vendor/bin/coveralls -v
