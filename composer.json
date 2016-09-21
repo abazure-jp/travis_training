@@ -1,5 +1,7 @@
 {
  "require-dev": {
-  "satooshi/php-coveralls": "dev-master"
+ },
+ "require": {
+  "satooshi/php-coveralls": "^1.0"
  }
 }
