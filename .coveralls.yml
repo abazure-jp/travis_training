@@ -1,4 +1,4 @@
-repo_token: 9AWWIkbZMQep3irampT4NwgvtSGhqvPLi
+repo_token: fd30ZorQx7eZOGtUZQJiwZny4Ta8YtvMw
 service_name: travis-ci
 coverage_clover: build/logs/clover.xml
 json_path: build/logs/coveralls-upload.json
