@@ -17,4 +17,7 @@ script:
   - php vendor/bin/phpunit --coverage-clover build/logs/clover.xml
 
 after_success:
+  - export CI_BUILD_NUMBER="$TRAVIS_BUILD_NUMBER"
+  - export CI_PULL_REQUEST="$TRAVIS_PULL_REQUEST"
+  - export CI_BRANCH="$TRAVIS_BRANCH"
   - travis_retry php vendor/bin/coveralls -v
