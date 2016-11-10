@@ -1,21 +1,21 @@
 language: php
 php:
-    - 5.5
-
+- 5.5
 matrix:
-    allow_failures:
-      - php: 5.5
-
+  allow_failures:
+  - php: 5.5
 install:
-  - curl -s http://getcomposer.org/installer | php
-  - php composer.phar install --dev --no-interaction
-
+- curl -s http://getcomposer.org/installer | php
+- php composer.phar install --dev --no-interaction
 script:
-  - mkdir -p build/logs
-  - php vendor/bin/phpunit --coverage-clover build/logs/clover.xml
-
+- mkdir -p build/logs
+- php vendor/bin/phpunit --coverage-clover build/logs/clover.xml
 after_success:
-  - export CI_BUILD_NUMBER="$TRAVIS_BUILD_NUMBER"
-  - export CI_PULL_REQUEST="$TRAVIS_PULL_REQUEST"
-  - export CI_BRANCH="$TRAVIS_BRANCH"
-  - travis_retry php vendor/bin/coveralls -v
+- export CI_BUILD_NUMBER="$TRAVIS_BUILD_NUMBER"
+- export CI_PULL_REQUEST="$TRAVIS_PULL_REQUEST"
+- export CI_BRANCH="$TRAVIS_BRANCH"
+- travis_retry php vendor/bin/coveralls -v
+notifications:
+  slack:
+    rooms:
+      secure: fQ+Z9teV88MxnfbOHoYb/R2+5Tf+2zeusgplQ0pDivxNX50cqb/6AmazlGdDKsCDPddTaImavrNXF2fqPKEEMoBLbdx23pVNjzXNbIrCrKZcn0WwnRaZOo/eVOt8LcUROWeCg27AoEopzWUQAVqjv+Bw1kGPOSw4KKl1oONia9waBPMyWvY0hCaZNXn5g5ZEyDuVJWVk40Te/+Ce9MycONsKl/zAsrdKsKc/MJrtCRSGvbe5vSfdlwN/UzG01vQ1fMh0aLMSkozV3r0710Ph5GZd/8QmQGr7ZuvVTzSE07JalXGQLcxmJhyAhs5C6CKpiUSHb/Rqhp29f8WT8swSU/B1k4PQE/nLWlbndmxF2KayCa0XlCe1RbGobg7M+x0HodBEh+oM9kXCmCDVZQWk26eiafWxjCm0hsE2mnoYvs7X1fwSO5rTL2ijqo1Nsw8+t/Kjoxa5fw9gFq2ul0cH3S8ywYtMFV4C5gl1Q73rrfZSttooFUq728xxkXKadtsbYyoiUUh9S1bN3zAziZwbAXsEvcdSz9iiGJa7eJdvCUS0GsehAzyXC/QDjWADN4UGl5yoES29Tv6Yq4mNBqgbPFKt1esxzMPW/PcXleF06B3WN0bUTi3O9I3+f3l0XSnMwoQ3prap94eehjYDLEDjo4q5guIFdUsCYtoi3q2wBcQ=
